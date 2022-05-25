@@ -3,12 +3,13 @@
 }
 
 .card-img-top {
-  height: 200px;
+  height: 230px;
   object-fit: cover;
 }
 
 .main_container {
   margin-top: 45px;
+  background-color: black;
 }
 
 
@@ -17,10 +18,32 @@ html {
   background-color: rgb(33, 37, 41);
 }
 
+.main_container,
 .my-dark {
   background-color: rgb(44, 45, 47)
 }
 
 .card-title {
   margin-top: 10px;
+}
+
+.card_container {
+  width: 90%;
+  margin: 0 auto !important;
+}
+
+@media only screen and (max-width: 1060px) {
+
+  .card_container {
+    width: 100%;
+    gap: 20px 0px;
+  }
+
+  .main_container {
+    padding: 0px !important;
+  }
+
+  .card-text {
+    height: 100px;
+  }
 }
