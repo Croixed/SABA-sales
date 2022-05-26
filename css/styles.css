@@ -56,3 +56,12 @@ html {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.featured_container {
+  gap: 20px 0px;
+}
+
+.featured_container .card-text {
+  height: 100px;
+  padding: 10px;
+}
