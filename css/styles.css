@@ -81,22 +81,3 @@ html {
   color: white !important;
 }
 
-/* add item button */
-.add-item-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 80px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  color: white;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-
-  bottom: 20px;
-  right: 12px;
-  position: fixed;
-}
