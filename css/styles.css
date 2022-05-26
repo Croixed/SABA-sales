@@ -48,6 +48,8 @@ html {
   }
 }
 
+/* index styling */
+
 .hero {
   background: rgba(1, 1, 1, 0.39) url("../img/hero2.jpg");
   background-blend-mode: darken;
@@ -66,7 +68,15 @@ html {
   padding: 10px;
 }
 
+/* form styling */
+
 .form_container {
   background-color: rgb(44, 45, 47);
   padding-top: 60px;
+}
+
+.form-select,
+.form-control {
+  background-color: rgb(30, 31, 31) !important;
+  color: white;
 }
