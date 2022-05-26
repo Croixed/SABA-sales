@@ -78,5 +78,5 @@ html {
 .form-select,
 .form-control {
   background-color: rgb(30, 31, 31) !important;
-  color: white;
+  color: white !important;
 }
