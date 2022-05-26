@@ -47,3 +47,12 @@ html {
     height: 100px;
   }
 }
+
+.hero {
+  background: rgba(1, 1, 1, 0.39) url("../img/hero2.jpg");
+  background-blend-mode: darken;
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
