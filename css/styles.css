@@ -1,3 +1,8 @@
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .card-text {
   height: 140px;
 }
@@ -98,7 +103,7 @@
   color: white !important;
 }
 
-.form-control {
+.my-search-bar {
   max-width: 350px !important;
   display: inline !important;
 }
