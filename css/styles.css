@@ -3,14 +3,16 @@ body {
   margin: 0 !important;
 }
 
-.card-text {
-  height: 140px;
-}
 
-.card-img-top {
-  height: 230px;
+
+.featured_container .card-img-top {
+  height: 240px;
   object-fit: cover;
 }
+
+/* .card {
+  min-height: 400px;
+} */
 
 .main_container {
   margin-top: 45px;
@@ -28,9 +30,7 @@ body {
   padding: 20px;
 }
 
-.card-title {
-  margin-top: 10px;
-}
+
 
 
 @media only screen and (max-width: 1060px) {
@@ -47,9 +47,7 @@ body {
     padding: 0px !important;
   }
 
-  .card-text {
-    height: 100px;
-  } */
+
 }
 
 .my-login-form {
@@ -83,11 +81,6 @@ body {
 
 .featured_container {
   gap: 20px 0px;
-}
-
-.featured_container .card-text {
-  height: 100px;
-  padding: 10px;
 }
 
 /* form styling */
@@ -127,4 +120,29 @@ video {
   object-fit: cover;
   filter: brightness(60%);
   z-index: -3;
+}
+
+
+/* alexus' page */
+.img-fluid {
+  object-fit: cover !important;
+  height: 270px;
+}
+
+
+
+
+
+
+
+/* card stuff */
+
+.card-body-home {
+  margin-top: 10px;
+  height: 120px;
+}
+
+.card-body-about {
+  margin-top: 10px;
+  height: 134px;
 }
