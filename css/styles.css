@@ -38,28 +38,20 @@ body {
   .featured_container {
     padding: 8px;
   }
-/*   .card_container {
-    width: 100%;
-    gap: 20px 0px;
-  } */
-
-/*   .main_container {
-    padding: 0px !important;
-  }
-
-
 }
 
 .my-login-form {
+  margin-top: 90px !important;
   width: 450px !important;
 }
 
-@media only screen and (max-width: 560px) {
-/*  */
+@media only screen and (max-width: 500px) {
+  .my-login-form {
+    width: 85% !important;
+  }
 }
 
-/* index styling */
-
+/* hero bg image styling, replaced with video */
 /* .hero {
   background: rgba(1, 1, 1, 0.39) url("../img/hero2.jpg");
   background-blend-mode: darken;
@@ -126,12 +118,16 @@ video {
 /* alexus' page */
 .img-fluid {
   object-fit: cover !important;
-  height: 270px;
+  height: 280px;
 }
 
+#Products .card {
+  margin: 0 auto;
+}
 
-
-
+.text-muted {
+  color: rgb(181, 181, 181) !important;
+}
 
 
 
@@ -145,4 +141,8 @@ video {
 .card-body-about {
   margin-top: 10px;
   height: 134px;
+}
+
+.card-body-product {
+  margin-left: 10px;
 }
