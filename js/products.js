@@ -17,9 +17,6 @@ const addProductCard = company => {
 
 
 const loadLocalSamples = () => {
-  // for testing below
-  // localStorage.clear();
-  // for testing above
   if (!localStorage.getItem('companies')) {
     const sampleController = new CompaniesController();
     sampleController.addCompany('juicer', 'lorem ipsum', 'some url', Date())
