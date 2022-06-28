@@ -17,6 +17,15 @@ class CompaniesController {
 
     this.companies.push(company);
   }
+
+  loadLocalStorage() {
+    const storageProducts = localStorage.getItem('companies');
+    if (storageProducts) {
+      const companies = JSON.parse(storageProducts);
+      companies.forEach(company => this.companies.push(company))
+    }
+  }
+  
 }
 
 // const companyController = new CompaniesController();

@@ -1,6 +1,6 @@
 import CompaniesController from "./productsController.js";
 
-const companyController = new CompaniesController();
+const companiesController = new CompaniesController();
 
 
 const productsContainer = document.querySelector('#list-companies');
@@ -16,24 +16,23 @@ const addProductCard = company => {
 }
 
 
-// samples
-// companyController.addCompany('juicer', 'lorem ipsum', 'some url', Date())
-//companyController.addCompany('foodstuffs', 'ipsum ipsum ipsum', 'some url 2', Date())
-
-// adding samples to DOM
-// addProductCard(companyController.companies[0]);
-// addProductCard(companyController.companies[1]);
-
-
-
 const loadLocalSamples = () => {
+  // for testing below
+  localStorage.clear();
+  // for testing above
   if (!localStorage.getItem('companies')) {
     const sampleController = new CompaniesController();
     sampleController.addCompany('juicer', 'lorem ipsum', 'some url', Date())
     sampleController.addCompany('foodstuffs', 'ipsum ipsum ipsum', 'some url 2', Date())
+    sampleController.addCompany('coffee', 'words words words words', 'some url 3', Date())
     localStorage.setItem('companies', JSON.stringify(sampleController.companies));
   }
-  
+}
+
+const renderCardsFromController = () => {
+  companiesController.companies.forEach(company => addProductCard(company));
 }
 
 loadLocalSamples();
+companiesController.loadLocalStorage();
+renderCardsFromController()
