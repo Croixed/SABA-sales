@@ -9,8 +9,8 @@ const sampleCard = document.querySelector('.card')
 const addProductCard = company => {
   const clonedCard = sampleCard.cloneNode(true);
   clonedCard.querySelector('img').src = './img/lemonade.png'; // company.imgUrl; hardcoding for testing
-  clonedCard.querySelector('h5').innerText = company.name;
-  clonedCard.querySelector('.card-text').innerText = company.desc;
+  clonedCard.querySelector('h5').textContent = company.name;
+  clonedCard.querySelector('.card-text').textContent = company.desc;
 
   productsContainer.appendChild(clonedCard);
 }
@@ -18,7 +18,7 @@ const addProductCard = company => {
 
 const loadLocalSamples = () => {
   // for testing below
-  localStorage.clear();
+  // localStorage.clear();
   // for testing above
   if (!localStorage.getItem('companies')) {
     const sampleController = new CompaniesController();
