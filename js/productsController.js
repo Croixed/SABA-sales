@@ -19,9 +19,11 @@ class CompaniesController {
   }
 }
 
-const companyController = new CompaniesController();
+// const companyController = new CompaniesController();
 
-companyController.addCompany('juicer', 'lorem ipsum', 'some url', Date())
-companyController.addCompany('foodstuffs', 'ipsum ipsum ipsum', 'some url 2', Date())
+// companyController.addCompany('juicer', 'lorem ipsum', 'some url', Date())
+// companyController.addCompany('foodstuffs', 'ipsum ipsum ipsum', 'some url 2', Date())
 
-console.log(companyController.companies);
+// console.log(companyController.companies);
+
+export default CompaniesController;
