@@ -1,7 +1,6 @@
 import CompaniesController from "./productsController.js";
 
 const companiesController = new CompaniesController();
-
 const form = document.querySelector("#main-form");
 
 form.onsubmit = e => {
@@ -14,3 +13,4 @@ form.onsubmit = e => {
 
   e.target.reset(); // resets input fields
 }
+

@@ -16,6 +16,13 @@ class CompaniesController {
     }
 
     this.companies.push(company);
+
+    // save to local storage, append to array if it exists
+    if (localStorage.getItem('companies')) {
+      const companies = JSON.parse(localStorage.getItem('companies'));
+      companies.push(company);
+      localStorage.setItem('companies', JSON.stringify(companies));
+    }
   }
 
   loadLocalStorage() {
