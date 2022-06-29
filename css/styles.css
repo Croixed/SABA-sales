@@ -3,6 +3,9 @@ body {
   margin: 0 !important;
 }
 
+.navbar{
+  height: 80px;
+}
 
 
 .featured_container .card-img-top {
@@ -146,4 +149,8 @@ video {
 
 .card-body-product {
   margin-left: 10px;
+}
+
+.footer {
+  height: 60px;
 }
