@@ -30,7 +30,11 @@ body {
   padding: 20px;
 }
 
-
+.my-btn {
+  width: 160px !important;
+  font-size: 28px;
+  margin: 0 100px;
+}
 
 
 @media only screen and (max-width: 1060px) {
@@ -49,27 +53,19 @@ body {
   .my-login-form {
     width: 85% !important;
   }
+
+  .my-btn {
+    width: 120px !important;
+    font-size: 20px;
+  }
 }
 
-/* hero bg image styling, replaced with video */
-/* .hero {
-  background: rgba(1, 1, 1, 0.39) url("../img/hero2.jpg");
-  background-blend-mode: darken;
-  height: 450px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-} */
 
 .hero {
-  height: 450px;
+  height: 550px;
 }
 
-.my-btn {
-  width: 120px !important;
-  margin: 0 100px;
-}
+
 
 .featured_container {
   gap: 20px 0px;
@@ -94,7 +90,12 @@ body {
 }
 
 
+@media only screen and (min-width: 1060px) {
 
+  #hero-text {
+    font-size: 30px;
+  }
+}
 
 
 
@@ -108,7 +109,7 @@ p {
 video {
   position: fixed;
   width: 100%;
-  height: 450px;
+  height: 550px;
   object-fit: cover;
   filter: brightness(60%);
   z-index: -3;
