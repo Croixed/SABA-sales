@@ -6,12 +6,11 @@ class CompaniesController {
     this.currentId = currentId;
   }
 
-  addCompany(name, desc, imgUrl, createdAt) {
+  addCompany(name, desc, imageUrl) {
     let company = {
       name: name, 
       desc: desc,
-      imgUrl: imgUrl,
-      createdAt: createdAt,
+      imageUrl: imageUrl,
       id: this.currentId++,
     }
 
@@ -23,6 +22,30 @@ class CompaniesController {
       companies.push(company);
       localStorage.setItem('companies', JSON.stringify(companies));
     }
+
+    //this.uploadItem({name, description, imageUrl });
+    this.save({name, desc, imageUrl});
+
+  }
+
+  save({name, description, imageUrl}) {
+    const data = { name,  description, imageUrl };
+    console.log("running save method", data);
+
+    fetch('http://localhost:8080/item', {
+    method: 'POST', // or 'POST'
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log('Success:', data);
+    })
+    .catch((error) => {
+    console.error('Error:', error);
+    });
   }
 
   loadLocalStorage() {
