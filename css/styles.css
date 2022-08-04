@@ -4,7 +4,8 @@ body {
 }
 
 .navbar{
-  height: 80px;
+  /* height: 80px; */
+  padding: 10px;
 }
 
 
@@ -134,12 +135,21 @@ video {
 }
 
 .product-card-img {
-  height: 300px !important;
-  width: 300px;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover !important;
 }
 
+.card-left {
+  width: 30%;
+  aspect-ratio: 1 / 1 !important;
+  display: inline-block;
+}
 
+.card-right {
+  width: 70%;
+  display: inline-block;
+}
 
 /* card stuff */
 
@@ -160,3 +170,4 @@ video {
 .footer {
   height: 60px;
 }
+
