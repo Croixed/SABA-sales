@@ -11,7 +11,7 @@ const addProductCard = company => {
   //clonedCard.querySelector('img').src = './img/lemonade.png'; // company.imgUrl; hardcoding for testing
   clonedCard.querySelector('img').src = company.imageUrl;
   clonedCard.querySelector('h5').textContent = company.name;
-  clonedCard.querySelector('.card-text').textContent = company.description;
+  clonedCard.querySelector('.product-card-text').textContent = company.description;
 
   productsContainer.appendChild(clonedCard);
 }

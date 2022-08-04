@@ -188,15 +188,32 @@ video {
 
 .category-container {
   display: inline-block;
-  width: 220px;
+  width: 250px;
+  position: relative !important;
 }
 
 .category-img {
-  width: 200px !important;
-  height: 200px !important;
+  width: 230px !important;
+  height: 230px !important;
   object-fit: cover !important;
   padding: 0;
   margin: 10px;
   border-radius: 12px;
   opacity: 0.6;
+}
+
+.category-text {
+  width: 200px;
+  font-weight: bold;
+  font-size: 27px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-card-text {
+  font-size: clamp(16px, 1.33vw, 26px);
 }
