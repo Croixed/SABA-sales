@@ -23,8 +23,17 @@ class CompaniesController {
       localStorage.setItem('companies', JSON.stringify(companies));
     }
 
-    //this.uploadItem({name, description, imageUrl });
-    this.save({name, description, imageUrl});
+    // working:
+    // this.save({name, description, imageUrl});
+
+    // working:
+    // let id = 10;
+    // this.update({id, name, description, imageUrl});
+
+    // working: logs found item to console
+    // this.findById(1);
+
+    this.delete(8);
 
   }
 
@@ -33,7 +42,7 @@ class CompaniesController {
     console.log("running save method", data);
 
     fetch('http://localhost:8080/item', {
-    method: 'POST', // or 'POST'
+    method: 'POST',
     headers: {
         'Content-Type': 'application/json',
     },
@@ -46,6 +55,47 @@ class CompaniesController {
     .catch((error) => {
     console.error('Error:', error);
     });
+  }
+
+  update({id, name, description, imageUrl}){
+    const data = {id, name,  description, imageUrl};
+    const url = `http://localhost:8080/item/${id}`;
+    fetch(url, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+  })
+  .then(response => response.json())
+  .then(data => {
+  console.log('Success:', data);
+  })
+  .catch((error) => {
+  console.error('Error:', error);
+  });
+  }
+
+  delete(itemId){
+      fetch(`http://localhost:8080/item/${itemId}`, {method: 'DELETE'})
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }
+
+  findById(itemId){
+      fetch(`http://localhost:8080/item/${itemId}`)
+      .then(response => response.json())
+      .then(data => {
+      console.log('Success:', data);
+      })
+      .catch((error) => {
+      console.error('Error:', error);
+      });
   }
 
   loadLocalStorage() {
