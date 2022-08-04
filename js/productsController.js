@@ -24,7 +24,7 @@ class CompaniesController {
     }
 
     // working:
-    // this.save({name, description, imageUrl});
+    this.save({name, description, imageUrl});
 
     // working:
     // let id = 10;
