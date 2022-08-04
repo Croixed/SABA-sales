@@ -33,7 +33,8 @@ class CompaniesController {
     // working: logs found item to console
     // this.findById(1);
 
-    this.delete(8);
+    // working: deletes item with passed in id
+    // this.delete(6);
 
   }
 
@@ -76,15 +77,10 @@ class CompaniesController {
   });
   }
 
-  delete(itemId){
-      fetch(`http://localhost:8080/item/${itemId}`, {method: 'DELETE'})
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+  async delete(itemId){
+      await fetch(`http://localhost:8080/item/${itemId}`, { method: 'DELETE' })
+      alert(`Item ${itemId} deleted`);
+      // delete gives no responses so there's nothing to parse and wait or catch?
   }
 
   findById(itemId){
