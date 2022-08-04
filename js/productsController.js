@@ -6,10 +6,10 @@ class CompaniesController {
     this.currentId = currentId;
   }
 
-  addCompany(name, desc, imageUrl) {
+  addCompany(name, description, imageUrl) {
     let company = {
       name: name, 
-      desc: desc,
+      description: description,
       imageUrl: imageUrl,
       id: this.currentId++,
     }
@@ -24,7 +24,7 @@ class CompaniesController {
     }
 
     //this.uploadItem({name, description, imageUrl });
-    this.save({name, desc, imageUrl});
+    this.save({name, description, imageUrl});
 
   }
 
