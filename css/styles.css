@@ -99,6 +99,17 @@ body {
   #hero-text {
     font-size: 30px;
   }
+
+  .card-title {
+    font-size: 38px;
+  }
+  .card-text {
+    font-size: 25px;
+  }
+
+  .card-text-lower {
+    font-size: 22px;
+  }
 }
 
 
@@ -169,5 +180,23 @@ video {
 
 .footer {
   height: 60px;
+} 
+
+.categories-container {
+  margin: 0 auto;
 }
 
+.category-container {
+  display: inline-block;
+  width: 220px;
+}
+
+.category-img {
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  padding: 0;
+  margin: 10px;
+  border-radius: 12px;
+  opacity: 0.6;
+}
