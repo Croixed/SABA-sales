@@ -133,6 +133,12 @@ video {
   color: rgb(181, 181, 181) !important;
 }
 
+.product-card-img {
+  height: 300px !important;
+  width: 300px;
+  object-fit: cover !important;
+}
+
 
 
 /* card stuff */
