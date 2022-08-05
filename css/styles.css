@@ -5,7 +5,7 @@ body {
 
 .navbar{
   /* height: 80px; */
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 
@@ -62,11 +62,20 @@ body {
     width: 120px !important;
     font-size: 20px;
   }
+
+  .card-body-about {
+    height: 80px !important;
+  }
+   
 }
 
 
 .hero {
   height: 550px;
+}
+
+#hero-text {
+  font-size: clamp(1.1rem, 1.7vw, 30px);
 }
 
 
@@ -96,15 +105,15 @@ body {
 
 @media only screen and (min-width: 1060px) {
 
-  #hero-text {
+/*   #hero-text {
     font-size: 30px;
-  }
+  } */
 
   .card-title {
     font-size: 38px;
   }
   .card-text {
-    font-size: 25px;
+    font-size: clamp(16px, 1.33vw, 26px);
   }
 
   .card-text-lower {
@@ -143,6 +152,7 @@ video {
 
 .text-muted {
   color: rgb(181, 181, 181) !important;
+  text-decoration: underline;
 }
 
 .product-card-img {
@@ -162,6 +172,8 @@ video {
   display: inline-block;
 }
 
+
+
 /* card stuff */
 
 .card-body-home {
@@ -171,7 +183,7 @@ video {
 
 .card-body-about {
   margin-top: 10px;
-  height: 134px;
+  height: 180px;
 }
 
 .card-body-product {
@@ -216,4 +228,20 @@ video {
 
 .product-card-text {
   font-size: clamp(16px, 1.33vw, 26px);
+}
+
+.ard-right .rating {
+  display: inline-block;
+  transform: scale(0.2) !important;
+}
+
+.saba-logo {
+  width: 150px;
+  height: auto;
+  filter: brightness(1.4);
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-size: 20px;
 }

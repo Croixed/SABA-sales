@@ -40,8 +40,7 @@ class CompaniesController {
 
   save({name, description, imageUrl}) {
     const data = { name,  description, imageUrl };
-    console.log("running save method", data);
-
+    // console.log("running save method", data);
     fetch('http://localhost:8080/item', {
     method: 'POST',
     headers: {
