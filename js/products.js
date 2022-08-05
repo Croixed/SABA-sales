@@ -20,9 +20,8 @@ const addProductCard = company => {
 const loadLocalSamples = () => {
   if (!localStorage.getItem('companies')) {
     const sampleController = new CompaniesController();
-    sampleController.addCompany('juicer', 'lorem ipsum', 'https://i.imgur.com/AR31QH3.png', Date())
-    sampleController.addCompany('foodstuffs', 'ipsum ipsum ipsum', 'https://i.imgur.com/iFo5o3E.png', Date())
-    // sampleController.addCompany('coffee', 'words words words words', 'some url 3', Date())
+    sampleController.addCompany('Virtual Insanity', 'A virtual reality store and gaming center. Try out a headset on our premises, rent a headset for a week at a time, or buy one to keep.', 'https://i.imgur.com/AR31QH3.png', Date())
+    sampleController.addCompany('Microsoft', 'Microsoft is the largest vendor of computer software in the world. It is also a leading provider of cloud computing services, computer and gaming hardware, search and other online services.', 'https://i.imgur.com/ZuOC8BT.png', Date())
     localStorage.setItem('companies', JSON.stringify(sampleController.companies));
   }
 }

@@ -3,11 +3,6 @@ body {
   margin: 0 !important;
 }
 
-.navbar{
-  /* height: 80px; */
-  /* padding: 10px; */
-}
-
 
 .featured_container .card-img-top {
   height: 240px;
@@ -105,10 +100,6 @@ body {
 
 @media only screen and (min-width: 1060px) {
 
-/*   #hero-text {
-    font-size: 30px;
-  } */
-
   .card-title {
     font-size: 38px;
   }
@@ -121,7 +112,9 @@ body {
   }
 }
 
-
+.card-text {
+  padding: 8px;
+}
 
 
 
